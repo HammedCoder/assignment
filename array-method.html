@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Method</title>
+  </head>
+  <body>
+    <h1>Array and Array Methods</h1>
+  </body>
+  <script>
+    const webTechs = [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Redux",
+      "Node",
+      "MongoDB",
+    ];
+    console.log(webTechs.length);
+    console.log(webTechs[0]);
+    const lastIndex = webTechs.length - 1;
+    console.log(webTechs[lastIndex]);
+    console.log(webTechs[2]);
+
+    constmixedDataTypes = [
+      "Adetunji",
+      12,
+      true,
+      { skill: ["HTML", "CSS", "JavaScript"] },
+      { role: { designation: "nurse" } },
+    ];
+    const itCompanies = [
+      "Facebook",
+      "Google",
+      "Microsoft",
+      "Apple",
+      "IBM",
+      "Oracle",
+      "Amazon",
+    ];
+    console.log(itCompanies);
+    console.log(`Number of IT Company is ${itCompanies.length}`);
+    console.log(itCompanies[0]);
+    console.log(itCompanies[lastIndex]);
+    console.log(itCompanies[3]);
+    for (let i = 0; i < itCompanies.length; i++) {
+      console.log(itCompanies[i]);
+      
+    }
+    for (let i = 0; i < itCompanies.length; i++) {
+      console.log(itCompanies[i].toUpperCase());
+    }
+    console.log(itCompanies.toString().replaceAll(',', ' '));
+    let it='IBM'
+    if (itCompanies.includes(it)) {
+        console.log(`${it} exist in the list`);
+    } else {
+        console.log(`${it} does not exist in the list`);
+    }
+    console.log(itCompanies.includes('IBM'))
+  </script>
+</html>
